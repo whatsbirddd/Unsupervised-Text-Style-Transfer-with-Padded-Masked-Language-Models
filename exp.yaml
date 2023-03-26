@@ -1,0 +1,9 @@
+datadir: '../data/Part1'
+savedir: '../data-styleT'
+model: 'KRBERT/pytorch_model_char16424_ranked.bin'
+config: 'KRBERT/bert_config.json'
+MODEL: 
+    max_seq_length: 512
+DATASET: 
+    num_train_nonbait: 20000
+SEED: 42    
