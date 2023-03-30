@@ -1,6 +1,7 @@
 # Style Transfer
 
 pytorch implementation   
+Author : Saeran Park
 Unsupervised Text Style Transfer with Padded Masked Language Models (EMNLP 2020)[[Paper]](https://arxiv.org/pdf/2010.01054.pdf)
 
 Stage1. Train the model
