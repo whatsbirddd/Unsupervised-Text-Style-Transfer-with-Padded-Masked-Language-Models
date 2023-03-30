@@ -103,7 +103,7 @@ class PaddedDataset(Dataset):
 
             # 2. loss계산 안 할 부분 찾기 : special token(cls, sep) + content
             label[:rand_idx] = -100  # We only compute loss on masked tokens
-            label[rand_idx+n:] = -100
+            label[rand_idx+n_masked:] = -100
 
             ## maxlen 맞추기
             input_ids = np.hstack((input_ids[:self.max_seq_length-1], [tokenizer.sep_token_id]))
